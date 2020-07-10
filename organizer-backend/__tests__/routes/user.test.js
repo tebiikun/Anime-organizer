@@ -111,10 +111,8 @@ describe('Deleting an existing user', () => {
 
 describe('Getting an existing user', () => {
     
-    fit('GET without existent user should be throw an error', async () => {
+    it('GET without existent user should be throw an error', async () => {
         const response = await supertest(app).get(`/api/user/aaaab6adfed6a746700aef0a`)
-        
-        console.log(response.body)
         expect(response.status).toBe(404)
     })
 

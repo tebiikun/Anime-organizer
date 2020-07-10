@@ -6,5 +6,5 @@ app = require('./App')();
 
 module.exports = app.listen(app.get('port'), err => {
     if (err) throw err
-    console.log(`Server running on port ${app.get('port')}`)
+    console.log(`Server running on port: ${app.get('port')}`)
 })
